@@ -1,0 +1,25 @@
+.ui-loader
+  .topcoat-spinner
+  %span.progress 加载中，请稍候...
+.st-container#st-container
+  %nav.st-menu.st-effect-1
+    .topcoat-list__container
+      %ul.topcoat-list.center-list
+        %li.topcoat-list__item.narrow-list-item
+          %a.topcoat-button--large--cta.long-button.sign-in-button 登录
+        %li.topcoat-list__item.narrow-list-item
+          %a.topcoat-button--large--cta.long-button.no-sign-in-button 稍候登录
+  .st-pusher
+    .st-content
+      .st-content-inner
+        .topcoat-navigation-bar
+          .topcoat-navigation-bar__item.left.quarter
+            %a.topcoat-icon-button.back-button
+              %span.topcoat-icon
+                %i.icon-chevron-left.icon-topcoat-icon
+          .topcoat-navigation-bar__item.center.half
+            %h1.topcoat-navigation-bar__title 完成
+          .topcoat-navigation-bar__item.right.quarter
+            %a.topcoat-button--cta.save-button 保存
+        .preview-image{style: "position:absolute;left:50%;margin-left:#{-(@width/2)}px;"}
+          %img#photo{src: "data:image/jpeg;base64,#{@imageData}", style: "width:#{@width}px;height:#{@height}px;"}

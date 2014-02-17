@@ -1,0 +1,45 @@
+.st-container#st-container
+  %nav.st-menu.st-effect-1
+    .topcoat-list__container
+      %ul.topcoat-list.center-list
+        %li.topcoat-list__item.narrow-list-item
+          %a.topcoat-button--large--cta.long-button#open-camera-button 拍照
+        %li.topcoat-list__item.narrow-list-item
+          %a.topcoat-button--large--cta.long-button#open-lib-button 从相册选择
+        %li.topcoat-list__item.narrow-list-item
+          %a.topcoat-button--large.long-button#over-screen-nav-close 取消
+  .st-pusher
+    .st-content
+      .st-content-inner
+        .topcoat-navigation-bar.fixed-bar
+          .topcoat-navigation-bar__item.left.quarter
+            %a.topcoat-icon-button--quiet#back-button
+              %span.topcoat-icon
+                %i.icon-chevron-left.icon-topcoat-icon
+          .topcoat-navigation-bar__item.center.half
+            %h1.topcoat-navigation-bar__title
+          .topcoat-navigation-bar__item.right.quarter
+            %a.topcoat-icon-button--quiet.is-disabled#next-button
+              %span.topcoat-icon
+                %i.icon-chevron-right.icon-topcoat-icon
+        .cover-image{style: "background:url('#{@bg_url}') no-repeat;-webkit-background-size: cover;background-size: cover;"}
+        .content
+          %textarea.topcoat-textarea#greeting{:cols => "24", :placeholder => "给TA留言吧", :rows => "3"}
+        .camera
+          %a.topcoat-icon-button--large--quiet#over-screen-nav-button
+            %span.topcoat-icon--large
+              %i.icon-camera.icon-topcoat-icon--large
+        .camera-toggle.circle-base
+        .microphone
+          %a.topcoat-icon-button--large--quiet#microphone-button
+            %span.topcoat-icon--large
+              %i.icon-microphone.icon-topcoat-icon--large
+        .trash
+          %a.topcoat-icon-button--large--quiet#trash-button
+            %span.topcoat-icon--large
+              %i.icon-trash.icon-topcoat-icon--large
+        .draggable-image
+          .image-container
+            %img#picture
+
+

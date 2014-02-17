@@ -1,0 +1,7 @@
+%a{:href => "#collections/#{@id}"}
+  %img{:src => "#{@image_url}"}
+  %p =@title
+  %p =@desp
+  %span.topcoat-icon--large.chevron
+    %i.icon-angle-right.icon-topcoat-icon--2x
+  %span.count =@topic_count

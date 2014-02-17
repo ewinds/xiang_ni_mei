@@ -1,0 +1,34 @@
+.ui-loader
+  .topcoat-spinner
+  %span.progress 加载中，请稍候...
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button{href: '#settings'}
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 我
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-icon-button--quiet
+      %span
+.topcoat-list__container.scroller{:style => "top:64px;"}
+  %ul.topcoat-list.topic-list
+    %li.topcoat-list__item
+      %a
+        %p 我的卡号
+        %p =@user_name
+    %li.topcoat-list__item
+      %a{:href => "#users/#{@user_id}/edit?nick_name"}
+        %p 我的昵称
+        %p =@nick_name
+        %span.topcoat-icon--large.chevron
+          %i.icon-angle-right.icon-topcoat-icon--2x
+    %li.topcoat-list__item
+      %a{:href => "#users/#{@user_id}/edit?password"}
+        %p 修改密码
+        %span.topcoat-icon--large.chevron
+          %i.icon-angle-right.icon-topcoat-icon--2x
+    %li.topcoat-list__item
+      %a#sign_out_button{:href => "#sign_out"}
+        %p 退出
+

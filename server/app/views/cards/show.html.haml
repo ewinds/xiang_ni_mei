@@ -1,0 +1,5 @@
+.cover-image{style: "background:url('#{@card.image.url}') no-repeat;-webkit-background-size: cover;background-size: cover;"}
+- if @card.audio
+  .microphone
+    %audio{:controls => "", :name => "media"}
+      %source{:src => "#{@card.audio.url}", :type => "audio/mpeg"}/

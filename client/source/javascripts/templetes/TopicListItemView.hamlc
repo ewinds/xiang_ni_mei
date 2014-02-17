@@ -1,0 +1,9 @@
+%a{:href => "#topics/#{@id}"}
+  %img{:src => "#{@image_url}"}
+  %p =@title
+  - if @desp
+    %p =@desp
+  - else
+    %p &nbsp;
+  %span.topcoat-icon--large.chevron
+    %i.icon-angle-right.icon-topcoat-icon--2x

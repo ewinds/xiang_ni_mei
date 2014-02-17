@@ -1,0 +1,24 @@
+defaults: &defaults
+  app_name: "疯狂微信"
+  GMAIL_USERNAME: saaspaasiaas@gmail.com
+  GMAIL_PASSWORD: fengkuang-weixin
+  MAILER_HOST: wxmp.ap01.aws.af.cm
+  ADMIN_NAME: Admin
+  ADMIN_EMAIL: saaspaasiaas@gmail.com
+  ADMIN_PASSWORD: changeme_1
+  ROLES:
+    - "admin"
+    - "user"
+    - "VIP"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+proxied-appfog:
+  <<: *defaults

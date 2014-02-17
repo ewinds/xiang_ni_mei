@@ -1,0 +1,11 @@
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button{href: "#settings"}
+      %span.topcoat-icon
+        %i.icon-list.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 想你妹
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-icon-button--quiet.alert-button
+      %span.topcoat-icon.topcoat-icon--edit
+.topcoat-list__container.scroller{:style => "top:64px;"}

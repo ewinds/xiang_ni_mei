@@ -1,0 +1,16 @@
+.topcoat-navigation-bar.fixed-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button--quiet#back-button
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-icon-button--large--quiet
+      %span
+.cover-image{style: "background:url('#{@image_url}') no-repeat;-webkit-background-size: cover;background-size: cover;"}
+- if @audio_url
+  .microphone
+    %a.topcoat-icon-button--large--quiet#microphone-button
+      %span.topcoat-icon--large
+        %i.icon-play.icon-topcoat-icon--large

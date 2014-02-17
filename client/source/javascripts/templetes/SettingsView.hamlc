@@ -1,0 +1,33 @@
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button{href: '#home'}
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 更多
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-icon-button--large--quiet
+      %span
+.topcoat-list__container.scroller{style: "top:64px;"}
+  %ul.topcoat-list.topic-list
+    %li.topcoat-list__item
+      - if @user_id
+        %a{:href => "#users/#{@user_id}"}
+          %p 我
+          .action-icon
+            %i.icon-user
+      - else
+        %a{:href => "#sign_in"}
+          %p 登录
+          .action-icon
+            %i.icon-user
+    %li.topcoat-list__item
+      %a{:href => "#cards"}
+        %p 传情足迹
+        .action-icon
+          %i.icon-book
+    %li.topcoat-list__item
+      %a{:href => "#employees/1"}
+        %p 扫码
+        .action-icon
+          %i.icon-qrcode

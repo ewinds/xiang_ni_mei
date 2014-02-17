@@ -1,0 +1,16 @@
+.ui-loader
+  .topcoat-spinner
+  %span.measure
+  %span.progress 加载中，请稍候...
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button.back-button
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 传情足迹
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-icon-button.synchronize-button
+      %span.topcoat-icon
+        %i.icon-repeat.icon-topcoat-icon
+.topcoat-list__container.scroller{:style => "top:64px;"}

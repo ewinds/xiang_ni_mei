@@ -1,0 +1,15 @@
+.ui-loader
+  .topcoat-spinner
+  %span.progress 加载中，请稍候...
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button.back-button
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 登录
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-button--cta.is-disabled.signin-button 登录
+.form-bar
+  %input.topcoat-text-input--large{:name => "user_name", :placeholder => "卡号或者用户名", :type => "text", :value => "", style: "width:100%;"}
+  %input.topcoat-text-input--large{:name => "password", :placeholder => "帐户密码", :type => "password", :value => "", style: "width:100%;margin-top:10px;"}

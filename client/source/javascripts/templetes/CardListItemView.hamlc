@@ -1,0 +1,14 @@
+%a{:href => "#cards/#{@id}"}
+  %div{style: "float:left;position: relative;margin-right: 8px;width:90px;height:90px;background:url('#{@image_url}') no-repeat;-webkit-background-size: cover;background-size: cover;"}
+    .description
+      - unless @synchronized
+        %i.icon-unlink
+      - else
+        %i.icon-link
+  %p =@updated_at
+  - if @message
+    %p =@message
+  - else
+    %p &nbsp;
+  %span.topcoat-icon--large.chevron
+    %i.icon-angle-right.icon-topcoat-icon--2x

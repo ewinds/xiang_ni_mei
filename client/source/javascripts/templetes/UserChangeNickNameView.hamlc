@@ -1,0 +1,15 @@
+.ui-loader
+  .topcoat-spinner
+  %span.progress 加载中，请稍候...
+.topcoat-navigation-bar
+  .topcoat-navigation-bar__item.left.quarter
+    %a.topcoat-icon-button.back-button
+      %span.topcoat-icon
+        %i.icon-chevron-left.icon-topcoat-icon
+  .topcoat-navigation-bar__item.center.half
+    %h1.topcoat-navigation-bar__title 更改昵称
+  .topcoat-navigation-bar__item.right.quarter
+    %a.topcoat-button--cta.is-disabled.save-button 保存
+.form-bar
+  %input.topcoat-text-input--large{:name => "nick_name", :type => "text", :value => "", style: "width:100%;"}
+  %p 好名字可以让你的朋友更容易记住你。
